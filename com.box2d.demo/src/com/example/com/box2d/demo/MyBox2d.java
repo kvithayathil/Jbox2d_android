@@ -214,6 +214,10 @@ public class MyBox2d extends Activity {
 			Vec2 position = boxBody.getPosition();
 			Log.d(TAG, "Box x:" + position.x + " y: " + position.y);
 
+			box.setTranslationX(position.x);
+			box.setTranslationY(position.y);
+
+			
 			mHandler.postDelayed(update, (long) timeStep * 1000);
 		}
 	};
